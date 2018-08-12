@@ -1,4 +1,4 @@
-.form-control.search{
+.form-control.search {
     height: auto;
     padding: .2rem .75rem;
     font-size: 1rem;
@@ -6,3 +6,17 @@
     border-radius: .2rem;
 }
 
+@media only screen and (max-width: 600px){
+    form{
+        margin-right: 0 !important;
+    }
+    
+    .form-control.search {
+        padding: .375rem .75rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .btn-sm {
+        padding: .355rem .75rem;
+    }
+}
