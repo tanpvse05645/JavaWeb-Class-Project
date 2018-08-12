@@ -15,12 +15,13 @@ import java.sql.SQLException;
  * @author Shado
  */
 public class MSSQLConnection {
+
     public static Connection getConnection() {
         Connection con = null;
-        String connectionUrl = "jdbc:sqlserver://" + IDBConfig.HOSTNAME 
-                             + ":" + IDBConfig.PORT + ";"
-                             + "databaseName=" + IDBConfig.DBNAME + ";" 
-                             + "integratedSecurity=" + IDBConfig.INTEGRATED_SECURITY + ";";
+        String connectionUrl = "jdbc:sqlserver://" + IDBConfig.HOSTNAME
+                + ":" + IDBConfig.PORT + ";"
+                + "databaseName=" + IDBConfig.DBNAME + ";"
+                + "integratedSecurity=" + IDBConfig.INTEGRATED_SECURITY + ";";
 
         try {
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
