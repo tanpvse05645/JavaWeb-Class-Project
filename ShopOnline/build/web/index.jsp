@@ -34,7 +34,7 @@
                             <a class="nav-link" href="#">Giảm giá</a>
                         </li>                     
                     </ul>
-                    <form class="form-inline my-2 my-lg-0 mg-r-30">
+                    <form class="form-inline my-2 my-lg-0 mg-right-30">
                         <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-sm btn-outline-secondary" type="submit">Search</button>
                     </form>
