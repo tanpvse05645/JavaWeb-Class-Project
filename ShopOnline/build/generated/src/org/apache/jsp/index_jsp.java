@@ -50,7 +50,9 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
       out.write("        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\r\n");
       out.write("        <title>JSP Page</title>\r\n");
+      out.write("        <!-- Bootstrap CSS -->\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"css/bootstrap/bootstrap.min.css\">\r\n");
+      out.write("        <!-- Custom CSS -->\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"css/common.css\">\r\n");
       out.write("        <link rel=\"stylesheet\" href=\"css/base.css\">\r\n");
       out.write("    </head>\r\n");
@@ -71,12 +73,12 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            <a class=\"nav-link\" href=\"#\">Giảm giá</a>\r\n");
       out.write("                        </li>                     \r\n");
       out.write("                    </ul>\r\n");
-      out.write("                    <form class=\"form-inline my-2 my-lg-0\">\r\n");
+      out.write("                    <form class=\"form-inline my-2 my-lg-0 mg-r-30\">\r\n");
       out.write("                        <input class=\"form-control mr-sm-2 search\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\r\n");
       out.write("                        <button class=\"btn btn-sm btn-outline-secondary\" type=\"submit\">Search</button>\r\n");
       out.write("                    </form>\r\n");
       out.write("                    <ul class=\"navbar-nav\">\r\n");
-      out.write("                        <li class=\"nav-item mg-r-30\">\r\n");
+      out.write("                        <li class=\"nav-item\">\r\n");
       out.write("                            <a class=\"nav-link\" href=\"#\">Đăng ký</a>\r\n");
       out.write("                        </li>\r\n");
       out.write("                        <li class=\"nav-item\">\r\n");
@@ -105,6 +107,8 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \r\n");
       out.write("        </footer>\r\n");
       out.write("        \r\n");
+      out.write("        <!-- Optional JavaScript -->\r\n");
+      out.write("        <!-- jQuery first, then Popper.js, then Bootstrap JS -->\r\n");
       out.write("        <script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"></script>\r\n");
       out.write("        <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\"></script>\r\n");
       out.write("        <script src=\"js/bootstrap/bootstrap.min.js\"></script>\r\n");
