@@ -73,7 +73,7 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                            <a class=\"nav-link\" href=\"#\">Giảm giá</a>\r\n");
       out.write("                        </li>                     \r\n");
       out.write("                    </ul>\r\n");
-      out.write("                    <form class=\"form-inline my-2 my-lg-0 mg-r-30\">\r\n");
+      out.write("                    <form class=\"form-inline my-2 my-lg-0 mg-right-30\">\r\n");
       out.write("                        <input class=\"form-control mr-sm-2 search\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\">\r\n");
       out.write("                        <button class=\"btn btn-sm btn-outline-secondary\" type=\"submit\">Search</button>\r\n");
       out.write("                    </form>\r\n");
