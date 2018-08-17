@@ -5,6 +5,9 @@
  */
 package Controller;
 
+import Config.IMessageConfig;
+import Entity.Account;
+import Services.AccountService;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -12,6 +15,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -33,6 +37,19 @@ public class Login extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            String email = request.getParameter("txtEmail");
+            String password = request.getParameter("txtPassword");
+            
+            AccountService accountService = new AccountService();
+            Account accountLogin = accountService.processLogin(email, password);
+            if(accountLogin != null){
+                HttpSession session = request.getSession();
+                session.setAttribute("currentLoginAccount", accountLogin);
+                response.sendRedirect("products.jsp");
+            } else {
+                request.setAttribute("errorMessage", IMessageConfig.LOGIN_FAIL);
+                request.getRequestDispatcher("login.jsp").forward(request, response);
+            }
             
         }
     }

@@ -20,7 +20,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand mb-0 h1" href="#">Shop Online</a>
+                <a class="navbar-brand mb-0 h1" href="index.jsp">Shop Online</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,7 +43,7 @@
                             <a class="nav-link" href="#">Đăng ký</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Đăng nhập</a>
+                            <a class="nav-link" href="login.jsp">Đăng nhập</a>
                         </li>
 <!--                        <li class="nav-item dropdown mg-r-30">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
