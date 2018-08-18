@@ -16,7 +16,15 @@ public class Account {
     private int accountDetailId;
     private int roleId;
     private int status;
-    private String createDate; 
+    private String createDate;
+
+    public Account(String email, String password, int accountDetailId, int roleId, int status) {
+        this.email = email;
+        this.password = password;
+        this.accountDetailId = accountDetailId;
+        this.roleId = roleId;
+        this.status = status;
+    }
 
     public Account(int id, String email, String password, int accountDetailId, int roleId, int status, String createDate) {
         this.id = id;

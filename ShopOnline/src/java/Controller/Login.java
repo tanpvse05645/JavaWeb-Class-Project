@@ -49,8 +49,7 @@ public class Login extends HttpServlet {
             } else {
                 request.setAttribute("errorMessage", IMessageConfig.LOGIN_FAIL);
                 request.getRequestDispatcher("login.jsp").forward(request, response);
-            }
-            
+            }         
         }
     }
 
