@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/src/java/DAO/MSSQLConnection.java</file>
-            <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/src/java/Config/IMessageConfig.java</file>
-            <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/src/java/Entity/AccountDetail.java</file>
             <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/src/java/Utils/GenerateRandomString.java</file>
+            <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/src/java/DAO/MSSQLConnection.java</file>
+            <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/src/java/Entity/AccountDetail.java</file>
+            <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/src/java/Config/IMessageConfig.java</file>
+            <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/src/java/Model/AccountModel.java</file>
+            <file>file:/C:/Users/Shado/Documents/GitHub/JavaWeb-Class-Project/ShopOnline/test/DAO/MSSQLConnectionTest.java</file>
         </group>
     </open-files>
 </project-private>
