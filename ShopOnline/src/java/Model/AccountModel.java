@@ -23,28 +23,55 @@ public class AccountModel implements ICommon<Account>{
     private PreparedStatement ps = null;
     private ResultSet rs = null;
     
+    /**
+     * Get all account in Database
+     * @return list object Account
+     */
     @Override
     public ArrayList<Account> getAll() {
         return null;
     }
 
+    /**
+     * Get one Account by Id
+     * @param id
+     * @return one object Account
+     */
     @Override
-    public Account getOne() {
+    public Account getOne(int id) {
         return null;
     }
 
+    /**
+     * Insert one Account to Database
+     * @param account
+     * @return true if insert Account success
+     *         false if insert Account fail
+     */
     @Override
-    public boolean add() {
+    public boolean add(Account account) {
         return false;
     }
 
+    /**
+     * Update info one Account in Database
+     * @param account
+     * @return true if update Account success
+     *         false if update Account fail
+     */
     @Override
-    public boolean update() {
+    public boolean update(Account account) {
         return false;
     }
 
+    /**
+     * Delete one Account in Database by Id
+     * @param id
+     * @return true if delete Account success
+     *         false if delete Account fail
+     */
     @Override
-    public boolean delete() {
+    public boolean delete(int id) {
         return false;
     }
     
@@ -63,8 +90,15 @@ public class AccountModel implements ICommon<Account>{
             ps.setString(2, password);
             rs = ps.executeQuery();
             if(rs.next()){
-                Account account = new Account(rs.getInt(1), rs.getString(2), rs.getString(3), 
-                        rs.getInt(4), rs.getInt(5), rs.getInt(6), rs.getString(7));
+                Account account = new Account(
+                    rs.getInt(1),
+                    rs.getString(2),
+                    rs.getString(3),
+                    rs.getInt(4),
+                    rs.getInt(5),
+                    rs.getInt(6),
+                    rs.getString(7)
+                );
                 return account;
             }
             return null;
