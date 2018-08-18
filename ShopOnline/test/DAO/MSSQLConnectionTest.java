@@ -15,18 +15,20 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
 
 /**
  *
  * @author Shado
  */
 public class MSSQLConnectionTest {
+    private static Connection connection = null;
     
     public MSSQLConnectionTest() {
     }
     
     @BeforeClass
-    public static void setUpClass() {
+    public static void setUpClass() {       
     }
     
     @AfterClass
@@ -35,10 +37,12 @@ public class MSSQLConnectionTest {
     
     @Before
     public void setUp() {
+        connection = MSSQLConnection.getConnection();
     }
     
     @After
     public void tearDown() {
+        connection = null;
     }
 
     /**
@@ -47,7 +51,6 @@ public class MSSQLConnectionTest {
     @Test
     public void testGetConnection() {
         System.out.println("getConnection");
-        Connection connection = MSSQLConnection.getConnection();
         assertTrue(connection != null);
     }
 
@@ -58,28 +61,30 @@ public class MSSQLConnectionTest {
     @Test
     public void testCloseConnection() throws SQLException {
         System.out.println("closeConnection");
-        Connection connection = MSSQLConnection.getConnection();
+        MSSQLConnection.closeConnection(connection);
         assertTrue(connection.isClosed());
     }
 
-//    /**
-//     * Test of closePreparedStatement method, of class MSSQLConnection.
-//     */
-//    @Test
-//    public void testClosePreparedStatement() {
-//        System.out.println("closePreparedStatement");
-//        PreparedStatement ps = null;
-//        MSSQLConnection.closePreparedStatement(ps);
-//    }
-//
-//    /**
-//     * Test of closeResultSet method, of class MSSQLConnection.
-//     */
-//    @Test
-//    public void testCloseResultSet() {
-//        System.out.println("closeResultSet");
-//        ResultSet rs = null;
-//        MSSQLConnection.closeResultSet(rs);
-//    }
+    /**
+     * Test of closePreparedStatement method, of class MSSQLConnection.
+     */
+    @Ignore
+    @Test
+    public void testClosePreparedStatement() {
+        System.out.println("closePreparedStatement");
+        PreparedStatement ps = null;
+        MSSQLConnection.closePreparedStatement(ps);
+    }
+
+    /**
+     * Test of closeResultSet method, of class MSSQLConnection.
+     */
+    @Ignore
+    @Test
+    public void testCloseResultSet() {
+        System.out.println("closeResultSet");
+        ResultSet rs = null;
+        MSSQLConnection.closeResultSet(rs);
+    }
     
 }
