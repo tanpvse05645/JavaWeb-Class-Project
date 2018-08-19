@@ -39,7 +39,7 @@ h6 {
     height: 100%;
     display: table;
     position: absolute;
-    background-image: url(../assets/bg-pattern-inverse.png);
+    background-image: url(../assets/images/bg-pattern-inverse.png);
 }
 
 #intro .middle {
@@ -103,7 +103,7 @@ input:-webkit-autofill {
 
 label {
     position: absolute;
-    margin-top: .5rem;
+    margin-top: .55rem;
     margin-left: 1rem;
     color: #ececec;
 }
@@ -115,7 +115,7 @@ label {
 .form-control {
     padding: .35rem 2.75rem .4rem ;
     font-size: 14px;
-    color: #fff;
+    color: #fff !important;
     background-color: rgba(255, 255, 255, 0.15);
     border: none;
     border-radius: 2rem;
@@ -249,26 +249,23 @@ input[type=checkbox] {
 
 @media (max-width: 500px) {
     .signin {
-        background-color: rgba(0, 0, 0, 0.45) !important;
+        background-color: #f96332 !important;
     }
     .signin .login-panel {
         width: calc(100%) !important;
-        background-color: transparent !important;
     }
     .signup {
-        background-color: rgba(0, 0, 0, 0.45) !important;
+        background-color: #f96332 !important;
     }
     .signup .login-panel {
         overflow-y: scroll;
         width: calc(100%) !important;
-        background-color: transparent !important;
     }
     .reminder-password {
-        background-color: rgba(0, 0, 0, 0.45) !important;
+        background-color: #f96332 !important;
     }
     .reminder-password .login-panel {
         width: calc(100%) !important;
-        background-color: transparent !important;
     }
 }
 

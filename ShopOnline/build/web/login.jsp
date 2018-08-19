@@ -28,7 +28,7 @@
             <div class="middle signin">
                 <div class="login-panel">
                     <div class="logo text-center">
-                        <a href="index.html">Shop Online</a>
+                        <a href="index.html"><img src="assets/images/logo.png" style="width: 55%"></a>
                     </div>
                     <p class="notification"> <%=message%> </p>
                     <form class="js-validation-signin">
@@ -78,7 +78,7 @@
 
         <footer>
             <p>
-                <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-terms">Terms</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; © 2018-2019 SunCEX.com All Rights Reserved
+                © 2018-2019 SunCEX.com All Rights Reserved
             </p>
         </footer>
 
