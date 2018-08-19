@@ -11,51 +11,82 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>JSP Page</title>
+        <!-- Custom Fonts -->
+        <script defer src="font-awesome/js/fontawesome-all.js"></script>
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="css/common.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" type="text/css" href="css/form.css">
     </head>
     <body>
-        <div class="panel">
-            <%
-                String message = request.getAttribute("errorMessage") == null ? "&nbsp;" : (String) request.getAttribute("errorMessage");
-            %>
-            <h3 class="text-center mg-bottom-30 logo">Shop Online</h3>
-            <div class="panel-login">
-                <h5 class="text-center mg-bottom-20">Khách hàng đăng nhập</h5>
-                <h6 class="text-center" style="color: red;">
-                    <%=message%>
-                </h6> 
-                <form action="Login" method="POST">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" name="txtEmail" aria-describedby="emailHelp" placeholder="Enter email">
+
+        <%
+            String message = request.getAttribute("errorMessage") == null ? "&nbsp;" : (String) request.getAttribute("errorMessage");
+        %>
+
+        <div id="intro">
+            <div class="middle signin">
+                <div class="login-panel">
+                    <div class="logo text-center">
+                        <a href="index.html">Shop Online</a>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Mật khẩu</label>
-                        <input type="password" class="form-control" name="txtPassword" placeholder="Password">
-                    </div>
-                    <div class="form-group">
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" id="customCheck">
-                            <label class="custom-control-label" for="customCheck">Lưu mật khẩu</label>
+                    <p class="notification"> <%=message%> </p>
+                    <form class="js-validation-signin">
+                        <div class="form-group">
+                            <label>
+                                <i class="far fa-envelope"></i>
+                            </label>
+                            <input type="email" class="form-control" placeholder="Nhập Email" name="txtEmail">
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-danger">Đăng nhập</button>
-                    <div class="form-group mg-top-20">
-                        <a href="">Đăng ký</a>
-                        <a href="">Quên mật khẩu?</a>
-                    </div>
-                </form>
+                        <div class="form-group">
+                            <label>
+                                <i class="fas fa-key"></i>
+                            </label>
+                            <input type="password" class="form-control" placeholder="Nhập mật khẩu" name="txtPassword">
+                        </div>
+                        <div class="form-group">
+                            <div class="col">
+                                <label class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="login-remember-me" name="login-remember-me">
+                                    <span class="custom-control-indicator"></span>
+                                    <span class="custom-control-description">Remember Me</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col">
+                                <button type="submit" class="btn btn-sm">
+                                    <i class="fas fa-sign-in-alt mg-r-5"></i> Đăng nhập
+                                </button>
+                            </div>
+                        </div>
+                        <div class="form-group" style="margin-top: 10px;">
+                            <div class="col">
+                                <a class="link-effect mg-top-5" href="reminder_password.html">
+                                    <i class="fas fa-lock mg-r-5" aria-hidden="true"></i> Forgot Password?
+                                </a>
+                                <a class="link-effect mg-top-5 float-right" href="signup.html">
+                                    <i class="fas fa-user-plus mg-r-5"></i> Register
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </div>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+        <footer>
+            <p>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#modal-terms">Terms</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; © 2018-2019 SunCEX.com All Rights Reserved
+            </p>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="js/jquery/jquery.min.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="js/bootstrap/bootstrap.min.js"></script>
     </body>
 </html>
